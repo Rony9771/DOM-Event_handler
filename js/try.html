@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Handlerh1</title>
+</head>
+<body>
+  <h1>Look for change Text</h1>
+  <p id="text-update">I can change</p>
+  <input type="text" id="text-feild">
+  <button id="btn-update">Update</button>
+
+  <script src="try.js"></script>
+  <script>
+    document.getElementById('btn-update').addEventListener('click',function(){
+    const textField =document.getElementById('text-feild');
+    const textInput =textField.value;
+
+    const p =document.getElementById('text-update');
+    p.innerText = textInput;
+    textField.value = '';
+  });
+
+  </script>
+</body>
+</html>

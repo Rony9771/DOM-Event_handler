@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Event</title>
+</head>
+<body>
+  <header>
+    <h1>DOM Event Practice Day</h1>
+  </header>
+  <main>
+    <h2 onclick="console.log('Thanks ')">Hello Bangaldeh</h2>
+    <button onclick="console.log('go to hell')">Click me</button>
+    <button onclick="console.log('go to heaven')">Another Button</button>
+    <br>
+    <br>
+     <!-- option-1  -->
+    <button onclick="document.body.style.backgroundColor='red'">Make Red</button>
+    
+    <!-- option-2  -->
+    <!-- onclick with function call -->
+    <button onclick="makeCyan()">Make Cyan</button>
+   
+    <!-- option-3  -->
+    <!-- using id -->
+    <button id="make-white">Make White</button>
+
+    <!-- option-4  -->
+    <button id="make-pink">make pink</button>
+
+     <!-- another option-4  -->
+     <button id="make-green">Green Button</button>
+
+     <!-- final  -->
+     <button id="make-orange">make orange</button>
+     <button id="make-gold">GoldenRod</button>
+  </main>
+  
+
+  <script src="js/event.js"></script>
+  <script>
+    
+  </script>
+
+</body>
+</html>
