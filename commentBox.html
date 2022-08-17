@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>comment Box</title>
+  <style>
+    h1{
+      text-align: center;
+    }
+   .post{
+
+   }
+  </style>
+</head>
+<body>
+  <h1>Welcome to my new post on social Media</h1>
+  <center>
+  <img  src="images/donation1.jpg" alt="" class="post">
+  </center>
+
+  <div id="comment-container">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo dignissimos hic ab maiores alias? Quos soluta tempora, voluptas facilis cumque similique fuga debitis sequi? Minus nam minima commodi, a dicta perspiciatis. Impedit voluptatum quisquam atque? Et cum odio necessitatibus distinctio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit obcaecati officiis hic quia magni aperiam cupiditate iste, tempore accusantium illo. Culpa, impedit? Voluptatibus, eum harum beatae similique autem fugit animi quos nisi sed velit non dicta quisquam doloremque distinctio minima!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem minus quam eum rerum doloremque, est odio aspernatur exercitationem adipisci ut natus! Provident eius soluta necessitatibus, earum dicta quibusdam eos exercitationem? Praesentium, repellat natus voluptate rerum nostrum necessitatibus soluta impedit earum!</p>
+  </div>
+  <textarea name="" id="text-area" cols="30" rows="5"></textarea>
+  <button id="comment-upadte">Comment</button>
+
+  <script>
+    document.getElementById('comment-upadte').addEventListener('click', function(){
+      const textArea =document.getElementById ('text-area');
+      const textadd = textArea.value;
+
+      const commentBox = document.getElementById('comment-container');
+      const p = document.createElement('p');
+      p.innerText =textadd;
+      commentBox.appendChild(p);
+
+      textArea.value ='';
+    
+    })
+  </script>
+  
+</body>
+</html>
